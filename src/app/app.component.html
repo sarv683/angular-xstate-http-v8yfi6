@@ -1,0 +1,4 @@
+
+<button (click)="machine.send({ type: 'LOAD' })">{{(machine.state$ | async).toStrings()}}</button>
+
+<pre>{{ (machine.state$ | async)?.context | json }}</pre>
